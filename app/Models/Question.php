@@ -9,5 +9,6 @@ class Question extends Model
 {
     use HasFactory;
 
+
     protected $guarded = [];
 }

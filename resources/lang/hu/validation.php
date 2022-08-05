@@ -85,7 +85,7 @@ return [
     'max' => [
         'numeric' => 'The :attribute must not be greater than :max.',
         'file' => 'The :attribute must not be greater than :max kilobytes.',
-        'string' => 'The :attribute must not be greater than :max characters.',
+        'string' => 'A(z) :attribute maximum :max karakter hosszú lehet.',
         'array' => 'The :attribute must not have more than :max items.',
     ],
     'mimes' => 'The :attribute must be a file of type: :values.',
@@ -93,7 +93,7 @@ return [
     'min' => [
         'numeric' => 'The :attribute must be at least :min.',
         'file' => 'The :attribute must be at least :min kilobytes.',
-        'string' => 'The :attribute must be at least :min characters.',
+        'string' => 'A(z) :attribute minimum :min karakter hosszúnak kell lennie.',
         'array' => 'The :attribute must have at least :min items.',
     ],
     'multiple_of' => 'The :attribute must be a multiple of :value.',
@@ -159,9 +159,9 @@ return [
     */
 
     'attributes' => [
-        'name_input'=>'név',
-        'email_input'=>'e-mail cím',
-        'message'=>'üzenet szövege'
+        'name'=>'név',
+        'email'=>'e-mail cím',
+        'description'=>'üzenet szövege'
     ],
 
 ];

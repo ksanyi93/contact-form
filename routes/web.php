@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('contact_form');
-});
-Route::post('/', [FormController::class, 'save_questions'] );
-Route::post('/', [FormController::class, 'validate_questions'] );
+})->name('contact_form');
+
+Route::post('/', [FormController::class, 'save'] )->name('contact_form.submitted');
